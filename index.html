@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroWorld Mob Explorer1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+ <header class="hero">
+  <img
+    class="hero__image"
+    src="images/eaac48a6-3cbb-46a2-bd08-8313940fc927.png"
+    alt="Minecraft landscape banner"
+  />
+
+  <div class="hero__content">
+    <h1 class="hero__title">
+      AstroWorld Mob Explorer
+    </h1>
+
+    <p class="hero__subtitle">
+      Search, filter, and explore every mob in the AstroWorld Minecraft server.
+    </p>
+  </div>
+</header>
+
+  <main>
+<section class="hero">
+  <h2 class="hero__title">Search Minecraft Mobs</h2>
+  <p class="hero__description">Search for any mob in Astroworld and view its stats, drops, and spawn information</p>
+ <form id="search-form" class="search">
+  <div class="search__group search__group--input">
+    <label for="search-input" class="search__label">
+      Search
+    </label>
+
+    <input
+      type="text"
+      id="search-input"
+      class="search__input"
+      placeholder="Search for a mob..."
+    >
+  </div>
+
+  <div class="search__group search__group--category">
+    <label for="category-filter" class="search__label">
+      Category
+    </label>
+
+    <select
+      id="category-filter"
+      class="search__select"
+    >
+      <option value="all">All</option>
+      <option value="Passive">Passive</option>
+      <option value="Neutral">Neutral</option>
+      <option value="Hostile">Hostile</option>
+      <option value="Boss">Boss</option>
+    </select>
+  </div>
+  <div class="search__group">
+  <label
+    for="sort-filter"
+    class="search__label"
+  >
+    Sort By
+  </label>
+
+  <select
+    id="sort-filter"
+    class="search__select"
+  >
+    <option value="name-asc">Name (A–Z)</option>
+    <option value="name-desc">Name (Z–A)</option>
+    <option value="hp-high">Highest HP</option>
+    <option value="hp-low">Lowest HP</option>
+  </select>
+</div>
+
+  <button type="submit" class="search__button">
+    Search
+  </button>
+</form>
+</section>
+<section class="results">
+  <div class="results__header">
+    <h2 class="results__title">Mob Results</h2>
+    <p id="results-count" class="results__count">0 mobs found</p>
+  </div>
+  <div id="mob-list" class="results__grid"></div>
+</section>
+<section class="about"></section>
+
+  </main>
+  <div
+  id="mob-modal"
+  class="modal"
+  aria-hidden="true"
+>
+  <div class="modal__overlay"></div>
+
+  <div
+    class="modal__content"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <button
+      id="modal-close"
+      class="modal__close"
+      type="button"
+      aria-label="Close modal"
+    >
+      ×
+    </button>
+
+    <div id="modal-body"></div>
+  </div>
+</div>
+</body>
+</html>
