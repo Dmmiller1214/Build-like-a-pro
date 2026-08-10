@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Creeper",
+    "role": "Explosive",
+    "difficulty": "Medium",
+    "description": "A hostile mob that explodes when it gets close to a player."
+  },
+  {
+    "name": "Enderman",
+    "role": "Teleporting",
+    "difficulty": "Hard",
+    "description": "A tall neutral mob that teleports and becomes hostile when stared at."
+  },
+  {
+    "name": "Zombie",
+    "role": "Melee",
+    "difficulty": "Easy",
+    "description": "A common hostile mob that attacks players at close range."
+  },
+  {
+    "name": "Skeleton",
+    "role": "Ranged",
+    "difficulty": "Medium",
+    "description": "A hostile mob that attacks players from a distance with a bow."
+  },
+  {
+    "name": "Spider",
+    "role": "Melee",
+    "difficulty": "Easy",
+    "description": "A fast hostile mob that can climb walls."
+  },
+  {
+    "name": "Witch",
+    "role": "Magic",
+    "difficulty": "Hard",
+    "description": "A hostile mob that uses harmful potions against players."
+  },
+  {
+    "name": "Blaze",
+    "role": "Ranged",
+    "difficulty": "Hard",
+    "description": "A Nether mob that shoots fireballs and can fly."
+  },
+  {
+    "name": "Slime",
+    "role": "Melee",
+    "difficulty": "Medium",
+    "description": "A bouncing mob that splits into smaller slimes when defeated."
+  }
+]
