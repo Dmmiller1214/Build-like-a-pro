@@ -6,7 +6,7 @@ function MobCard({ mob }) {
       {mob.iconId && (
         <img
           className="mob-icon"
-          src={`/mob-icons/${mob.iconId}.png`}
+          src={`${import.meta.env.BASE_URL}mob-icons/${mob.iconId}.png`}
           alt={`${mob.name} icon`}
         />
       )}

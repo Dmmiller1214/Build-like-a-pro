@@ -192,7 +192,7 @@ useEffect(() => {
     try {
       const [mobsResponse, entitiesResponse] = await Promise.all([
         fetch('https://api.astroworldmc.com/v1/mobs'),
-        fetch('/entities.json'),
+        fetch(`${import.meta.env.BASE_URL}entities.json`),
       ]);
 
       if (!mobsResponse.ok || !entitiesResponse.ok) {
